@@ -1,6 +1,6 @@
 {
   "name": "bunforge",
-  "module": "index.ts",
+  "module": "build.ts",
   "devDependencies": {
     "@types/bun": "^1.3.13",
     "bun-plugin-tailwind": "^0.1.2",
