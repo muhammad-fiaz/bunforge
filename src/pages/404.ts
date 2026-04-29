@@ -8,7 +8,7 @@ export const NotFound: PageComponent = {
     title: "404 - Page Not Found",
     description: "The page you are looking for does not exist."
   },
-  render: () => {
+  client: () => {
     // Example of useState
     const [getCount, setCount] = useState(0);
     
@@ -26,7 +26,8 @@ export const NotFound: PageComponent = {
       
       return () => console.log('404 Page Unloaded, final count:', getCount());
     });
-
+  },
+  render: () => {
     return `
     <div class="text-center py-20 w-full animate-fade-in flex flex-col items-center justify-center">
       <div class="inline-flex items-center justify-center p-4 bg-red-500/10 rounded-3xl mb-8 border border-red-500/20">
